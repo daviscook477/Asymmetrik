@@ -23,11 +23,15 @@ So a simple solution to this O(n) time complexity issue could be to restrict aut
 In this way, the size of n is kept limited and allows the trie to very efficiently retrieve possible endings for the prefixes that must be searched.
 
 ## Compilation and Execution Instructions
-Since the software is written in Java it may be compiled using the "javac" command, however the software has already been compiled in the bin/ directory.
-So to execute the interactive console for examining the software's function, all that is required is to navigate to the bin/ directory in the terminal and then running:
-"java com.davispcook.asymmetrik.executable.Main"
+Since the software is written in Java it may be compiled using the `javac` command, however the software has already been compiled in the bin/ directory.
+So to execute the interactive console for examining the software's function, all that is required is to navigate to the `bin/` directory in the terminal and then running:
+
+```
+java com.davispcook.asymmetrik.executable.Main
+```
+
 Further details for how to use the interactive console will be shown once the demo starts.
 
 ## Pulling up the Documentation
-The source code for this project in the src/ folder is well documented with comments explaining what each part of the algorithm does.
-A general overview of the project and its classes can be found in the doc/ folder by opening "index.html" in the web browser and browsing the automatically generated JavaDoc.
+The source code for this project in the `src/` folder is well documented with comments explaining what each part of the algorithm does.
+A general overview of the project and its classes can be found in the `doc/` folder by opening `index.html` in the web browser and browsing the automatically generated JavaDoc.
