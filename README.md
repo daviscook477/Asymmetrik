@@ -30,4 +30,4 @@ Further details for how to use the interactive console will be shown once the de
 
 ## Pulling up the Documentation
 The source code for this project in the src/ folder is well documented with comments explaining what each part of the algorithm does.
-A general overview of the project and its classes can be found in the docs/ folder by opening "index.html" in the web browser and browsing the automatically generated JavaDoc.
+A general overview of the project and its classes can be found in the doc/ folder by opening "index.html" in the web browser and browsing the automatically generated JavaDoc.
