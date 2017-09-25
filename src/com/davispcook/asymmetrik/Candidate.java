@@ -34,6 +34,11 @@ public class Candidate implements Comparable<Candidate> {
 	public Integer getConfidence() {
 		return occurences;
 	}
+	
+	@Override
+	public String toString() {
+		return this.getWord() + ": (" + this.getConfidence() + ")";
+	}
 
 	@Override
 	public int compareTo(Candidate other) {
@@ -41,6 +46,15 @@ public class Candidate implements Comparable<Candidate> {
 			throw new NullPointerException();
 		}
 		return Integer.compare(other.getConfidence(), this.getConfidence());
+	}
+	
+	@Override
+	public boolean equals(Object other) {
+		if (!(other instanceof Candidate)) {
+			return false;
+		}
+		Candidate otherCandidate = (Candidate) other;
+		return (this.getWord().equals(otherCandidate.getWord()) && this.getConfidence() == otherCandidate.getConfidence());
 	}
 	
 }

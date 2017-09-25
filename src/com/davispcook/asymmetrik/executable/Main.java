@@ -46,6 +46,13 @@ public class Main {
 	public static final String TRAIN_INDICATOR = "<<<";
 	public static final String EXIT_INDICATOR = "<>";
 	
+	/**
+	 * Confirms that an input prefix is valid, i.e.
+	 * it only contains lowercase alphabetic characters
+	 * 
+	 * @param input the input line to check
+	 * @return if it is valid as a prefix
+	 */
 	public static boolean isValidInput(String input) {
 		char[] inputAsCharArray = input.toCharArray();
 		for (int i = 0; i < inputAsCharArray.length; i++) {
@@ -56,6 +63,11 @@ public class Main {
 		return true;
 	}
 	
+	/**
+	 * Main program loop that can be used to test application functionality
+	 * 
+	 * @param args command line arguments - UNUSED
+	 */
 	public static void main(String[] args) {
 		AutocompleteProvider acProvider = new AutocompleteProvider();
 		Scanner input = new Scanner(System.in);
